@@ -1,6 +1,6 @@
-import User from "../models/User.model.js";
-import Hotel from "../models/Hotel.model.js";
-import Booking from "../models/Booking.model.js";
+import User from "../models/user.model.js";
+import Hotel from "../models/hotel.model.js";
+import Booking from "../models/booking.model.js";
 
 
 

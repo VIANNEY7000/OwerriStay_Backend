@@ -1,5 +1,5 @@
-import Hotel from "../models/Hotel.model.js";
-import Review from "../models/Review.model.js";
+import Hotel from "../models/hotel.model.js";
+import Review from "../models/review.model.js";
 
 
 // CREATR REVIEW
