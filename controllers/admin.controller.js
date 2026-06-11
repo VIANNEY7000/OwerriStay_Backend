@@ -3,6 +3,27 @@ import Hotel from "../models/hotel.model.js";
 import Booking from "../models/booking.model.js";
 
 
+// GET ALL MANAGER
+export const getAllManagers = async (req, res) => {
+  try {
+    const allManagers = await User.find({
+      role:"manager",
+    }).select("-password");
+
+    return res.status(200).json({
+      success: true,
+      count: allManagers.length,
+      data: allManagers,
+    });
+
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: error.message,
+    });
+  }
+};
+
 
 // GET PENDING MANAGER
 export const getPendingManagers = async (req, res) => {
